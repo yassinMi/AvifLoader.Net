@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+    <ItemGroup Condition=" '$(Platform)' == 'x64' ">
+        <Content Include="$(MSBuildThisFileDirectory)..\runtimes\win-x64\native\libMiAvifJpgWraper64.dll">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+            <Link>libMiAvifJpgWraper64.dll</Link>
+        </Content>
+    </ItemGroup>
+
+    <ItemGroup Condition=" '$(Platform)' == 'x86' OR '$(Platform)' == 'AnyCPU' ">
+        <Content Include="$(MSBuildThisFileDirectory)..\runtimes\win-x86\native\libMiAvifJpgWraper86.dll">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+            <Link>libMiAvifJpgWraper86.dll</Link>
+        </Content>
+    </ItemGroup>
+
+</Project>

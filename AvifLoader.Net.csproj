@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <PropertyGroup>
+    <TargetFrameworks>net6.0-windows;net452;netcoreapp3.1</TargetFrameworks>
+    <UseWPF>true</UseWPF>
+    <AMEVersion Condition="$(AMEVersion) == '' Or $(AMEVersion) == '*Undefined*'">1.0.0</AMEVersion>
+    <AssemblyTitle>AvifLoader.Net</AssemblyTitle>
+    <Product>AvifLoader.Net</Product>
+    <Description>Create BitmapSource from an Avif image file.</Description>
+    <Version>$(ALVersion)</Version>
+    <AssemblyVersion>$(ALVersion)</AssemblyVersion>
+    <NoWarn>CS1591;CS1574</NoWarn>
+    <DocumentationFile>bin\$(Configuration)\AvifLoader.Net.xml</DocumentationFile>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  
+  </PropertyGroup>
+ 
+ 
+
+</Project>
